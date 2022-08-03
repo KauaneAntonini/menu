@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.ul__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav__header {
+    background-color: rgb(162, 155, 155);
+}
+
+.div__nav2 {
+  display: flex;
+  cursor: pointer;
+
+}
+
+.div__nav2 .li__header {
+    margin: 1rem;
+} 
+
+.funcionarios{
+    display: none;
+}
+
+.dropdown{
+    display: block;
+    background-color: aliceblue;
+    width: 30%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.3s;
+
+}

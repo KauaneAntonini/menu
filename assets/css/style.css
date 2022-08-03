@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.img__header{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.nav__header{
+    width: 100vw;
+    height: 9rem;
+    background-color: rgb(201, 113, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:100%;
+
+}
+
+.img2__header{
+    width: 80px;
+    height: 80px;
+}
+
+.ul__header{
+    display: flex;   
+    align-items: center;
+}
+
+.li__header{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.li__header:first-child{
+    margin-left: 10px;
+    
+}
+
+.input__header{
+    border-radius: 5px;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a b";
+    margin-top: 8rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.section__main{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__main{
+    grid-area: b;
+    border-left: 1px solid black;
+    padding: 2rem;
+    height: 60vh;
+}
+
+.img__main{
+    width: 20rem;
+    height: auto;
+}
+
+.p__main{
+    width: 20rem;
+}
+
+.button__main{
+    width: 5rem;
+    display: inline;
+}
+
+.section2__main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__nav{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.h3__nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.li__nav{
+    font-size: 12px;
+    margin-top: .5rem;
+}
+
+.section__nav,
+.section2__nav,
+.section3__nav{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div__nav{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    width: 12rem;
+    
+}
+
+.button__nav{
+    background-color: rgb(235, 136, 50);
+    border: none;
+    border-radius: 1px;
+    padding: .4rem .1rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    box-shadow: 2px -2px 2px 0px rgb(135, 128, 128);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.div2__nav{
+    display: flex;
+}
+
+.img__nav{
+    width: 5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+}
+
+.footer{
+    background-color: rgb(235, 136, 50);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form__footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input__nome,
+.input__email,
+.input__senha{
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .img__header{
+        width: 50%;
+        height: 100%;
+    }
+    .nav__header{
+        top: 30%;
+        width: 100vw;
+    }
+    .main{
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .img__main{
+        width: 80%;
+    }
+    .nav__main{
+        display: none;
+    }
+}
+
